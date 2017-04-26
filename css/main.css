@@ -1,0 +1,64 @@
+body { font-size: 24px; background: url(../img/pw_maze_white.png);}
+#site-id {background: no-repeat center url(../img/market_truck.jpg); background-size:100%; height: 150px;  border: solid; border-color: #006323; border-radius: 5px; margin-top: 10px;}
+img#logo {width: 235px; margin-right: auto; margin-left: auto; display: block;}
+.sec { padding-top: 10px; }
+#contact_info { text-align: center;}
+h1 {margin-top: 0;}
+h2 { margin-top: 0;}
+.bckgrnd {background-color: #fff; padding: 4px 15px; border-radius: 5px;}
+#image_grid img {width: 100%; }
+#map iframe { width:100%; height: 280px;}
+
+/*this is the image grid css*/
+.wrap {
+   overflow: hidden;
+   margin: 10px;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 33%;
+   padding-bottom: 33%;
+}
+.boxInner {
+   position: absolute;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 10px;
+   overflow: hidden;
+}
+.boxInner img {
+   width: 100%;
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   padding: 10px;
+   text-align: center;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+/*media queries*/
+
+@media all and (min-width: 768px){
+	#image_grid { margin-top: -85px;}
+	body { font-size: 16px;}
+}
+@media all and (min-width: 992px) {
+	#image_grid { margin-top: -108px;}
+	#site-id { height: 190px; }
+	img#logo { width: 310px;}
+}
+@media all and (min-width: 1199px) {
+	#site-id { height: 210px; }
+	img#logo { width: 340px;}
+}
